@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<extension xmlns="http://ns.adobe.com/air/extension/4.0">
+    <id>livefan.winpcap</id>
+    <versionNumber>1.0.0</versionNumber>
+    <name>
+        <text xml:lang="en_US">WinPcapExtension</text>
+    </name>
+    <platforms>
+        <platform name="Windows-x86">
+            <applicationDeployment>
+                <nativeLibrary>WinPcapANEDll.dll</nativeLibrary>
+                <initializer>ExtInitializer</initializer>
+                <finalizer>ExtFinalizer</finalizer>
+            </applicationDeployment>
+        </platform>
+        <!--
+        <platform name="default">
+            <applicationDeployment />
+        </platform>
+        -->
+    </platforms>
+</extension>
